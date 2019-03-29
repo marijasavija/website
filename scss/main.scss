@@ -1,11 +1,12 @@
 @import "config";
 @import "menu";
+
 * {
   box-sizing: border-box;
 }
 body {
   @include background;
-  background: $primary-color;
+  // background: $primary-color;
   color: white;
   height: 100%;
   margin: 0;

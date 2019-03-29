@@ -13,7 +13,7 @@ $background-opacity: 0.9;
       background-attachment: fixed;
       background-size: cover;
 
-      &::after {
+      &:after {
         content: "";
         position: absolute;
         top: 0;
