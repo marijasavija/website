@@ -93,7 +93,6 @@
 body {
   background: #444;
   color: #fff;
-  height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
@@ -110,8 +109,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.8);
-      background-repeat: repeat; }
+      background: rgba(68, 68, 68, 0.8); }
   body#bg-about {
     background: url(../img/newaboutme.jpg);
     background-position: center center;
@@ -125,8 +123,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.8);
-      background-repeat: repeat; }
+      background: rgba(68, 68, 68, 0.8); }
 
 h1,
 h2 {
@@ -212,6 +209,8 @@ main {
       height: 150px; } }
 
 @media screen and (max-width: 500px) {
+  body#bg-about {
+    position: relative; }
   main .about-info {
     display: flex;
     justify-content: center;

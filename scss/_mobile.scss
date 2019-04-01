@@ -44,6 +44,10 @@
 }
 
 @include mediaSm {
+  body#bg-about {
+    position: relative;
+  }
+
   main {
     .about-info {
       display: flex;

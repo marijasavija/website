@@ -35,7 +35,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  // opacity: 2;
   visibility: hidden;
 
   &.show {
@@ -111,6 +110,7 @@
     }
   }
 }
+
 @for $x from 1 through 3 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
