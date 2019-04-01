@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -79,7 +79,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/picture.jpg");
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -103,7 +103,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: white;
+    color: set-text-color($primary-color);
     @include easeOut;
 
     &:hover {
@@ -111,7 +111,7 @@
     }
   }
 }
-@for $x from 1 through 4 {
+@for $x from 1 through 3 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }

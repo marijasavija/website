@@ -1,18 +1,30 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  @include background;
   background: $primary-color;
-  color: white;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  // overflow: hidden;
+
+  &#bg-img {
+    background: $home-image;
+    @include background;
+  }
+
+  &#bg-about {
+    background: $about-image;
+    @include background;
+  }
 }
 
 h1,
@@ -60,3 +72,4 @@ main {
     }
   }
 }
+@import "mobile";
