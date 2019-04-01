@@ -72,4 +72,26 @@ main {
     }
   }
 }
+.box {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  div {
+    font-size: 2 rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
 @import "mobile";

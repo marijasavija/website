@@ -1,5 +1,6 @@
 @include mediaXl {
 }
+
 @include mediaLg {
 }
 @include mediaMd {
@@ -51,7 +52,8 @@
     }
 
     &#home h1,
-    &#about h1 {
+    &#about h1,
+    &#contact h1 {
       margin-top: 10vh;
       font-size: 4rem;
     }
