@@ -1,0 +1,45 @@
+.thanks-message {
+  display: none;
+
+  &.show {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+  }
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  &.hide {
+    display: none;
+  }
+
+  .form-control {
+    width: 48%;
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $secondary-color;
+    padding: 10px;
+    color: set-text-color($primary-color);
+    font-family: $font;
+  }
+
+  .submit {
+    background: $secondary-color;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: $font;
+    letter-spacing: 2px;
+  }
+}
