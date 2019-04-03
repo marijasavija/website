@@ -3,8 +3,12 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+const contactForm = document.querySelector(".sub-form");
+const message = document.querySelector(".thanks-message");
 
 let showMenu = false;
+let submitted = false;
+
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
@@ -22,5 +26,16 @@ function toggleMenu() {
     menuBranding.classList.remove("show");
     menuNav.classList.remove("show");
     navItems.forEach(i => i.classList.remove("show"));
+  }
+}
+function hideElement() {
+  if (!submitted) {
+    contactForm.classList.add("hide");
+    message.classList.add("show");
+    submitted = true;
+  } else {
+    contactForm.classList.remove("hide");
+    message.classList.remove("show");
+    submitted = false;
   }
 }

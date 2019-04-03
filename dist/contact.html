@@ -46,14 +46,63 @@
     <main id="contact">
       <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
       <h2 class="sm-heading">
-        This is how you can reach me...
+        Interested in doing a project together ?
       </h2>
-      <div class="box">
-        <div>
-          <span class="text-secondary">Email:</span> marija.savija.148@gmail.com
-        </div>
+
+      <div class="contact-form">
+        <form
+          id="gform"
+          name="gform"
+          class="sub-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfA7QATA5Ev3RQkEQ5wmks9s06WCIy2lVz9TlypHPdKo8q8lA/formResponse?"
+          target="hidden_iframe"
+          onsubmit="hideElement()"
+        >
+          <input
+            type="text"
+            name="entry.527886153"
+            id="entry.527886153"
+            class="form-control"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="entry.656124846"
+            id="entry.656124846"
+            class="form-control"
+            placeholder="Email Address"
+            required
+          />
+          <textarea
+            name="entry.328771431"
+            id="entry.328771431"
+            class="form-control"
+            placeholder="Message"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            name=""
+            class="form-control submit"
+            value="SEND"
+          />
+        </form>
+      </div>
+      <div class="thanks-message">
+        <p>
+          <span class="text-secondary">Thank you</span> for getting in touch
+          with me
+        </p>
       </div>
     </main>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display:none;"
+      onload=" "
+    ></iframe>
+
     <script src="js/main.js"></script>
   </body>
 </html>

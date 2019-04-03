@@ -1,7 +1,53 @@
 @include mediaXl {
-}
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p#about-text {
+    font-size: 35px;
+  }
+  .menu {
+    .nav-link {
+      font-size: 3rem;
+      padding: 2rem;
+      font-weight: 600px;
+    }
+    .portrait {
+      width: 250px;
+      height: 280px;
+    }
+  }
 
-@include mediaLg {
+  form {
+    margin-top: 8rem;
+
+    .form-control {
+      width: 60%;
+      margin: 15px 0;
+      border-bottom: 3px solid $secondary-color;
+      padding: 20px;
+      font-size: 30px;
+    }
+    .submit {
+      padding: 20px;
+      border-radius: 5px;
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+  }
+  div.thanks-message > p {
+    font-size: 40px;
+  }
+  i {
+    transform: scale(1.5);
+    padding: 0.8rem;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 24px;
+  }
 }
 @include mediaMd {
   main {
