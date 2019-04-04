@@ -6,7 +6,7 @@
     font-size: 35px;
   }
   p#about-text {
-    font-size: 35px;
+    font-size: 25px;
   }
   .menu {
     .nav-link {
@@ -99,6 +99,7 @@
       display: flex;
       justify-content: center;
       align-content: center;
+      flex-direction: column-reverse;
     }
 
     &#home h1,
@@ -111,6 +112,11 @@
     .sm-heading {
       font-size: 1rem;
       margin-bottom: 1rem;
+    }
+
+    .grid-box {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 }

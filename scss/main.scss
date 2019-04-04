@@ -19,11 +19,6 @@ body {
     background: $home-image;
     @include background;
   }
-
-  &#bg-about {
-    // background: $about-image;
-    @include background;
-  }
 }
 
 h1,
@@ -71,14 +66,31 @@ main {
       margin-top: 20vh;
     }
   }
-}
-.diving {
-  width: 250px;
-  height: 250px;
-  background: $diving-image;
-  border-radius: 50%;
-  border: solid 3px $secondary-color;
-  float: right;
+
+  .grid-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    max-width: 450px;
+    float: right;
+
+    .diving {
+      width: 150px;
+      height: 150px;
+      background: $diving-image;
+      @include pictures;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+
+    .karting {
+      width: 250px;
+      height: 250px;
+      background: $karting-image;
+      @include pictures;
+      grid-column: 2 / span 3;
+      grid-row: 2 / span 2;
+    }
+  }
 }
 
 @import "mobile";
