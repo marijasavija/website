@@ -288,11 +288,10 @@ main {
       background: url("../img/portraitSmall.jpg");
       width: 150px;
       height: 150px; }
-  .form{
+  .form {
     flex-wrap:nowrap; }
-    .form .form-control{
-      width:100%; }
-}
+    .form .form-control {
+      width:100%; } }
 
 @media screen and (max-width: 500px) {
   body#bg-about {
@@ -312,4 +311,8 @@ main {
     margin-bottom: 1rem; }
   main .grid-box {
     display: flex;
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; } 
+  .form {
+    flex-wrap:nowrap; }
+    .form .form-control {
+      width:100%; } }
