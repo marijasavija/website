@@ -287,7 +287,12 @@ main {
     .menu-branding .portrait {
       background: url("../img/portraitSmall.jpg");
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .form{
+    flex-wrap:nowrap; }
+    .form .form-control{
+      width:100%; }
+}
 
 @media screen and (max-width: 500px) {
   body#bg-about {
