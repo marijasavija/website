@@ -140,14 +140,13 @@ form {
 body {
   background: #444;
   color: #fff;
+  height:100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    height:100%;
     background: url(../img/background.jpg);
     background-attachment: fixed;
-    background-repeat:no-repeat;
     background-size: cover; }
     body#bg-img:after {
       content: "";
