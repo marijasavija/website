@@ -148,7 +148,7 @@ body {
     background-position: center center;
     background-size: cover; }
     body#bg-img:after {
-      content: "";
+      content: " ";
       position: absolute;
       top: 0;
       right: 0;
