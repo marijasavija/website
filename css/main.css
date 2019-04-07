@@ -7,6 +7,9 @@
 ::-ms-input-placeholder {
   color: #fff; }
 
+html {
+  height:100%; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -142,7 +145,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    position: relative;
     height: 100%;
     background: url(../img/background.jpg);
     background-attachment: fixed;
