@@ -12,6 +12,7 @@ body {
   background: $primary-color;
   color: set-text-color($primary-color);
   margin: 0;
+  height: 100%;
   font-family: $font;
   line-height: 1.5;
 
@@ -68,6 +69,7 @@ main {
   }
   p#about-text {
     font-size: 17px;
+    text-align: left;
   }
 
   .grid-box {

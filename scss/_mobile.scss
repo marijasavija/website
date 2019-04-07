@@ -7,7 +7,7 @@
   }
   main {
     p#about-text {
-      font-size: 30px;
+      font-size: 25px;
     }
   }
   .menu {
@@ -23,10 +23,9 @@
   }
 
   form {
-    margin-top: 8rem;
+    width: 60%;
 
     .form-control {
-      width: 60%;
       margin: 15px 0;
       border-bottom: 3px solid $secondary-color;
       padding: 20px;
@@ -92,23 +91,28 @@
 }
 
 @include mediaSm {
-  body#bg-about {
-    position: relative;
-  }
-
   main {
+    padding: 1rem 0.5rem 0 0.5rem;
+
     .about-info {
       display: flex;
       justify-content: center;
       align-content: center;
       flex-direction: column-reverse;
     }
+    p#about-text {
+      text-align: justify;
+    }
+
+    &#home {
+      padding: 4rem 4rem 0 4rem;
+    }
 
     &#home h1,
     &#about h1,
     &#contact h1 {
       margin-top: 10vh;
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     .sm-heading {
@@ -119,6 +123,10 @@
     .grid-box {
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    form {
+      width: 95%;
     }
   }
 }
