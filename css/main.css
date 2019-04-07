@@ -144,6 +144,8 @@ body {
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover; }
     body#bg-img:after {
       content: "";
@@ -264,6 +266,8 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+  main form {
+      width: 95%; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
