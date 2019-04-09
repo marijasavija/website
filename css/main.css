@@ -289,8 +289,9 @@ main {
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/portraitSmall.jpg");
-      width: 150px;
-      height: 150px; } }
+      background-size: cover;
+      width: 20vw;
+      height: 20vh; } }
 
 @media screen and (max-width: 500px) {
    main {
