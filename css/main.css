@@ -290,7 +290,7 @@ main {
     .menu-branding .portrait {
       background: url("../img/portraitSmall.jpg");
       background-size: cover;
-      width: 20vw;
+      width: 20vh;
       height: 20vh; } }
 
 @media screen and (max-width: 500px) {
